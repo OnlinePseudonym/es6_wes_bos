@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+        </style>
+    </head>
+    <body>
+        <script>
+            const first = 'snickers';
+            const last = 'bos';
+            const age = 2;
+            const breed = 'King Charles Cav';
+
+            const dog = {
+                firstName: first,
+                last,
+                age,
+                breed,
+                pals: ['Hugo', 'Sunny']
+            };
+
+            const modal = {
+                create(selector) { // === create: function(selector)
+
+                },
+                open(content) {
+
+                },
+                close(goodbye) {
+
+                }
+            }
+
+            function invertColor(color) {
+                return '#' + ("000000" + (0xFFFFFF ^ parseInt(color.substring(1),16)).toString(16)).slice(-6);
+            }
+
+            const key = 'pocketColor';
+            const value = '#ffc600';
+
+            const tShirt = {            
+                [key]: value
+                [`${key}Opposite`]: invertColor(value)
+            };
+            console.log(tShirt);
+
+        </script>
+    </body>
+</html>

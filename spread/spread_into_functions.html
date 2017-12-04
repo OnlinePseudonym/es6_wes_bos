@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+        </style>
+    </head>
+    <body>
+        <script>
+            const inventors = ['Einstein', 'Newton', 'Galileo'];
+            const newInventors = ['Musk', 'Jobs'];
+
+            inventors.push(...newInventors);
+
+            const name = ['Wes', 'Bos']
+
+            function sayHi(first, last) {
+                alert(`Hey there ${first} ${last}`);
+            };
+
+            sayHi(...name);
+
+        </script>
+    </body>
+</html>

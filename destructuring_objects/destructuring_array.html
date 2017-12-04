@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+            .h1 {
+                background: #ffc600
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bio">
+
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/0.8.2/purify.min.js"></script>
+        <script>
+            const details = ['Wes Bos', 123, 'wesbos.com'];
+            
+            const [ name, id, website ] = details;
+
+            const data = 'Basketball,Sports,90210,23,wes,bos,cool';
+            const [itemName, category, sku, inventory] = data.split(',');
+
+            const team = ['Wes', 'Harry', 'Sarah', 'Keegan', 'Riker'];
+            const [captain, assistant, ...players] = team;
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "systemjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "browser-sync start --directory --server --files '*.js, *.html, *.css'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "D": "^1.0.0",
+    "browser-sync": "^2.18.13"
+  }
+}

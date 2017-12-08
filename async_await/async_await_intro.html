@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+        </style>
+    </head>
+    <body>
+        <script>
+            function breathe(amount) {
+                return new Promise((resolve, reject) => {
+                    if (amount < 500) {
+                        reject('That is too small of a value');
+                    }
+                    setTimeout(() => resolve(`Done for ${amount} ms`), amount);
+                });
+            }
+
+            async function go() {
+                console.log('start');
+                const res = await breathe(1000);
+                console.log(res);
+                const res2 = await breathe(650);
+                console.log(res2);
+                const res3 = await breathe(750);
+                console.log(res3);
+                const res4 = await breathe(400);
+                console.log(res4);
+                console.log('end');
+            }
+
+            go();
+        </script>
+    </body>
+</html>
